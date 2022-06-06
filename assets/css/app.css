@@ -2486,6 +2486,12 @@ input {
     }
 }
 
+@media only screen and (min-width: 992px) {
+    .onlyMobile {
+        display: none;
+    }
+}
+
 @media only screen and (max-width: 991px) {
     .onlyMobile {
         display: block !important;
