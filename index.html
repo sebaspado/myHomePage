@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sebastian Padovani</title>
+    <meta name="description" content="sebastian padovani web site">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/media/favicon.png">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/sal.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/odometer-theme-default.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+</head>
+
+<body class="sticky-header onepage-template">
+    <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  	<![endif]-->
+    <a href="#main-wrapper" id="backto-top" class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <!-- Preloaderrrrrrrrrrrrrrrrr -->
+    <div id="preloader"></div>
+
+    <div class="my_switcher d-none d-lg-block">
+        <ul>
+            <li title="Light Mode">
+                <a href="javascript:void(0)" class="setColor light" data-theme="light">
+                    <i class="fas fa-lightbulb"></i>
+                </a>
+            </li>
+            <li title="Dark Mode">
+                <a href="javascript:void(0)" class="setColor dark" data-theme="dark">
+                    <i class="fas fa-moon"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+
+
+    <!-- Portfolio Modal Box -->
+    <div class="op-portfolio-modal op-modal-wrap">
+        <div class="op-modal-inner">
+            <button class="close">X</button>
+            <div class="op-modal-content">
+                <div class="portfolio-thumbnail"></div>
+                <div class="portfolio-content"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="main-wrapper" class="main-wrapper">
+        <header class="header axil-header header-style-1">
+            <div id="axil-sticky-placeholder"></div>
+            <div class="axil-mainmenu">
+                <div class="container">
+                    <div class="header-navbar">
+                        <div class="header-logo">
+                            <a href="#"><img class="light-version-logo logoSvg" src="assets/img/logoSPblack.svg" alt="logo"></a>
+                            <a href="#"><img class="dark-version-logo logoSvg" src="assets/img/logoSPwhite.svg" alt="logo"></a>
+                            <a href="#"><img class="sticky-logo logoSvg" src="assets/img/logoSPblack.svg" alt="logo"></a>
+                        </div>
+                        <div class="header-main-nav">
+                            <nav class="mainmenu-nav" id="mobilemenu-popup">
+                                <div class="d-block d-lg-none">
+                                    <div class="mobile-nav-header">
+                                        <div class="mobile-nav-logo">
+                                            <a href="#">
+                                                <img class="light-mode" src="assets/img/logoSPblack.svg" alt="Site Logo">
+                                                <img class="dark-mode" src="assets/img/logoSPwhite.svg" alt="Site Logo">
+                                            </a>
+                                        </div>
+                                        <button class="mobile-menu-close" data-bs-dismiss="offcanvas"><i
+                                                class="fas fa-times"></i></button>
+                                    </div>
+                                </div>
+                                <ul class="mainmenu" id="onepagenav">
+                                    <li>
+                                        <a href="#home">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="#cv">My skills</a>
+                                    </li>
+                                    <li>
+                                        <a href="#design">What I do</a>
+                                    </li>
+                                    <li>
+                                        <a href="#portfolio">Portfolio</a>
+                                    </li>
+                                    <li class="header-btn">
+                                        <a href="#contact" class="axil-btn btn-fill-primary">Let's Talk</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="header-action">
+                            <ul class="list-unstyled">
+                                <li class="mobile-menu-btn sidemenu-btn d-lg-none d-block">
+                                    <button class="btn-wrap" data-bs-toggle="offcanvas" data-bs-target="#mobilemenu-popup">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </button>
+                                </li>
+                                <li class="my_switcher d-block d-lg-none">
+                                    <ul>
+                                        <li title="Light Mode">
+                                            <a href="javascript:void(0)" class="setColor light" data-theme="light">
+                                                <i class="fas fa-lightbulb"></i>
+                                            </a>
+                                        </li>
+
+                                        <li title="Dark Mode">
+                                            <a href="javascript:void(0)" class="setColor dark" data-theme="dark">
+                                                <i class="fas fa-moon"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="banner banner-style-1" id="home">
+            <div class="container">
+                <div class="row align-items-end align-items-xl-start">
+                    <div class="col-md-12 col-lg-6">
+                        <div class="banner-content" data-sal="slide-up" data-sal-duration="1000" data-sal-delay="100">
+                            <h1 class="title">Hi, Im Sebas Padovani, passionate web designer.</h1>
+                            <span class="subtitle">Based in Buenos Aires, Argentina. <i
+                                    class="fas fa-map-marker-alt"></i></span>
+                            <a href="#cv" class="axil-btn btn-fill-primary btn-large">Let me show you my work first <i
+                                    class="fas fa-chevron-down ml-5"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 col-lg-6">
+
+                        <div class="banner-thumbnail">
+
+                            <div class="large-thumb-new" data-sal="slide-right" data-sal-duration="800" data-sal-delay="300">
+                                <img src="assets/img/hero.png" alt="Laptop">
+                            </div>
+
+                            <div class="large-thumb-mobile" data-sal="slide-left" data-sal-duration="1000" data-sal-delay="500">
+                                <img src="assets/img/heroMobile.png" alt="iphone">
+                            </div>
+
+                            <div class="large-thumb-ipad" data-sal="slide-left" data-sal-duration="700" data-sal-delay="4+00">
+                                <img src="assets/img/heroIpad.png" alt="ipad">
+                            </div>
+
+                            <div class="large-thumb-cactus" data-sal="slide-left" data-sal-duration="700" data-sal-delay="4+00">
+                                <img src="assets/img/cactus.png" alt="cactus">
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <ul class="list-unstyled shape-group-21">
+                <li class="shape shape-1" data-sal="slide-down" data-sal-duration="500" data-sal-delay="100">
+                    <img src="assets/img/bubble-39.png" alt="Bubble animation one">
+                </li>
+                <li class="shape shape-2" data-sal="zoom-in" data-sal-duration="800" data-sal-delay="500">
+                    <img src="assets/img/bubble-38.png" alt="Bubble animation two">
+                </li>
+
+            </ul>
+        </section>
+
+        <section class="section section-padding-2 bg-color-dark cv-section" id="cv">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-md-3 cv-image">
+                        <img src="assets/img/sebas.jpg" alt="">
+                        <div class="section-heading">
+                            <span class="subtitle">10 years of experience</span>
+                            <h2 class="title">Turning ideas in cool productos</h2>
+                            <p class="cvP"> Download mi full CV <a href="">here <i class="fas fa-file"></i></a> </p>
+                        </div>
+                    </div>
+                    <div class="col-md-9 position-relative">
+                        <div class="code-editor">
+                            <span class="control"></span>
+                            <span class="control"></span>
+                            <span class="control"></span>
+                            <pre class="line-numbers language-css">				<code class=" language-css">
+<span class="token comment" spellcheck="true">/* 
+    Name: Sebastian Padovani Haedo
+    Age: 38 years 
+    Date of birth: 02.11.1983     
+*/</span>
+
+<span class="token selector">#skills </span><span class="token punctuation">{</span>
+    <span class="token property">Html5-Css3</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+    <span class="token property">Sass</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+    <span class="token property">ResponsiveDesign</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+    <span class="token property">Bootstrap</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+    <span class="token property">Jquery</span><span class="token punctuation">:</span> 80%<span class="token punctuation">;</span>
+    <span class="token property">Javascript</span><span class="token punctuation">:</span> 70%<span class="token punctuation">;</span>
+    <span class="token property">React</span><span class="token punctuation">:</span> 70%<span class="token punctuation">;</span>
+    <span class="token property">StyledComponents</span><span class="token punctuation">:</span> 90%<span class="token punctuation">;</span>
+    <span class="token property">MaterialUI</span><span class="token punctuation">:</span> 90%<span class="token punctuation">;</span>
+    <span class="token property">Wordpress</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+    <span class="token property">EmailLayoutHtmlCss</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+    <span class="token property">Php</span><span class="token punctuation">:</span> 20%<span class="token punctuation">;</span>
+    <span class="token property">Git</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+    <span class="token property">UiDesign</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+    <span class="token property">Ux</span><span class="token punctuation">:</span> 80%<span class="token punctuation">;</span>
+    <span class="token property">Figma</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+    <span class="token property">Photoshop-Illustrator</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+    <span class="token property">WebPerformarce</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+    <span class="token property">AgileMethodologies </span><span class="token punctuation">:</span> <span class="token string">"Kanban"</span> <span class="token punctuation">;</span>
+    <span class="token property">Jira-Trello </span><span class="token punctuation">:</span> <span class="token string">"Advanced"</span> <span class="token punctuation">;</span>
+    <span class="token property">English</span><span class="token punctuation">:</span> <span class="token string">"Advanced"</span> <span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+
+<span class="token selector">#lastJobs</span><span class="token punctuation">{</span>
+    <span class="token selector">.2021-2022</span><span class="token punctuation">{</span>
+      <span class="token property">position</span><span class="token punctuation">:</span><span class="token string">"FrontEnd Developer"</span><span class="token punctuation">;</span>
+      <span class="token property">company</span><span class="token punctuation">:</span><span class="token string">"Quiena inversiones"</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token selector">.2020-2022</span><span class="token punctuation">{</span>
+        <span class="token property">position</span><span class="token punctuation">:</span><span class="token string">"WebDesign Educator"</span><span class="token punctuation">;</span>
+        <span class="token property">company</span><span class="token punctuation">:</span><span class="token string">"EducacionIt"</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token selector">.2016-2021</span><span class="token punctuation">{</span>
+      <span class="token property">position</span><span class="token punctuation">:</span><span class="token string">"FrontEnd Developer"</span><span class="token punctuation">;</span>
+      <span class="token property">company</span><span class="token punctuation">:</span><span class="token string">"GuruSoluciones"</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token selector">.2016</span><span class="token punctuation">{</span>
+      <span class="token property">position</span><span class="token punctuation">:</span><span class="token string">"FrontEnd Developer"</span><span class="token punctuation">;</span>
+      <span class="token property">company</span><span class="token punctuation">:</span><span class="token string">"Fotter"</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token selector">.2015</span><span class="token punctuation">{</span>
+      <span class="token property">position</span><span class="token punctuation">:</span><span class="token string">"FrontEnd Developer - Graphic Designer - Pm"</span><span class="token punctuation">;</span>
+      <span class="token property">company</span><span class="token punctuation">:</span><span class="token string">"Aulinked"</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token selector">.2012-2015</span><span class="token punctuation">{</span>
+      <span class="token property">position</span><span class="token punctuation">:</span><span class="token string">"FrontEnd Developer - Graphic Designer"</span><span class="token punctuation">;</span>
+      <span class="token property">company</span><span class="token punctuation">:</span><span class="token string">"Syncromind"</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+
+<span class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </section>
+
+        <section class="section section-padding-equal what-featured-area" id="design">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-5 col-lg-6" data-sal="slide-right" data-sal-duration="1100">
+                        <div class="slick-slider slick-dot-nav featured-content" data-slick='{"infinite": true,"arrows": false, "dots": true, "slidesToShow": 1, "asNavFor": ".featured-thumbnail"}'>
+                            <div class="slick-slide">
+                                <div class="what-featured">
+                                    <div class="section-heading heading-left">
+                                        <span class="subtitle">The 3 steps that I most enjoy</span>
+                                        <h2 class="title">Design, code &amp; test</h2>
+                                        <p>
+                                            We all have our favorite moments at work. Without a doubt, the ones I enjoy the most are going from figma, to coding and finally to testing in the browser.</p>
+                                    </div>
+
+                                    <div class="what-featured-thumb d-lg-none">
+                                        <img src="assets/img/parte-de-diseño.png" alt="travel">
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="slick-slide">
+                                <div class="what-featured">
+                                    <div class="section-heading heading-left">
+                                        <span class="subtitle">But not only a web designer</span>
+                                        <h2 class="title">Always training creativity</h2>
+                                        <p>I'm a science fiction fan, space and life outside our planet, so I try to design what I imagine. I can spend hours in Photoshop, that's why many people sometimes ask me for related work, album covers, postcards,
+                                            posters, or some special work, the design has no limits.</p>
+                                    </div>
+                                    <div class="what-featured-thumb d-lg-none">
+                                        <img src="assets/img/parte-de-diseño2.png" alt="travel">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    <div class="col-xl-7 col-lg-6 d-none d-lg-block" data-sal="slide-left" data-sal-duration="800">
+                        <div class="slick-slider slick-dot-nav featured-thumbnail" data-slick='{"infinite": true,"arrows": false, "dots": false, "fade": true, "slidesToShow": 1, "asNavFor": ".featured-content"}'>
+                            <div class="slick-slide">
+                                <div class="what-featured-thumb">
+                                    <img src="assets/img/parte-de-diseño.png" alt="travel">
+                                </div>
+                            </div>
+                            <div class="slick-slide">
+                                <div class="what-featured-thumb">
+                                    <img src="assets/img/parte-de-diseño2.png" alt="travel">
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section class="section section-padding-2" id="portfolio">
+            <div class="container">
+                <div class="section-heading heading-left mb--40">
+                    <span class="subtitle">Some works</span>
+                </div>
+                <div class="axil-isotope-wrapper">
+                    <div class="isotope-button isotope-project-btn">
+                        <button data-filter="*" class="is-checked"><span class="filter-text">All Works</span></button>
+                        <button data-filter=".web"><span class="filter-text">Web</span></button>
+                        <button data-filter=".design"><span class="filter-text">Design</span></button>
+                    </div>
+                    <div class="row row-35 isotope-list">
+
+                        <div class="col-md-6 project web">
+                            <div class="project-grid">
+                                <div class="thumbnail">
+                                    <a href="">
+                                        <img src="assets/img/quienaIpad.png" alt="quiena ipad image">
+                                    </a>
+                                    <img class="modal-thumb" src="assets/img/quienaWeb.JPG" alt="quiena web page">
+                                </div>
+                                <div class="content">
+                                    <h4 class="title">Quiena inversiones</h4>
+                                    <span class="subtitle">Layout on React / Styled Components</span>
+                                    <div class="details-description">
+                                        <p><a target="_blank" href="https://www.quiena.com">Visit site</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 project web">
+                            <div class="project-grid">
+                                <div class="thumbnail">
+                                    <a href="#">
+                                        <img src="assets/img/rankMobile.jpg" alt="project rank & style">
+                                    </a>
+                                    <img class="modal-thumb" src="assets/media/project/project-2.png" alt="Blog Post">
+                                </div>
+                                <div class="content">
+                                    <h4 class="title"><a href="#">Rank & Style</a></h4>
+                                    <span class="subtitle">Layout on React / Styled components / Material UI</span>
+                                    <div class="details-description">
+                                        <p><a target="_blank" href="https://www.rankandstyle.com">Visit site</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-6 project web">
+                            <div class="project-grid">
+                                <div class="thumbnail">
+                                    <a href="#">
+                                        <img src="assets/img/littleDesk.jpg" alt="project">
+                                    </a>
+                                    <img class="modal-thumb" src="assets/img/littleWeb.jpg" alt="little blue on screen">
+                                </div>
+                                <div class="content">
+                                    <h4 class="title"><a href="#">Little blue</a></h4>
+                                    <span class="subtitle">Design y layout (Bootstrap)</span>
+                                    <div class="details-description">
+                                        <p><a target="_blank" href="https://www.littleblue.com.ar">Visit site</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 project web">
+                            <div class="project-grid">
+                                <div class="thumbnail">
+                                    <a href="#">
+                                        <img src="assets/img/conectaliaPc.jpg" alt="conectalia on screen">
+                                    </a>
+                                    <img class="modal-thumb" src="assets/img/conectaliaWeb.jpg" alt="conectalia Post">
+                                </div>
+                                <div class="content">
+                                    <h4 class="title"><a href="#">Conectalia</a></h4>
+                                    <span class="subtitle">Design / Layout on React / Styled components </span>
+                                    <div class="details-description">
+                                        <p><a target="_blank" href="https://www.conectalia.com">Visit site</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 project web">
+                            <div class="project-grid">
+                                <div class="thumbnail">
+                                    <a href="#">
+                                        <img src="assets/img/sanandresDesk.jpg" alt="san andres on screen">
+                                    </a>
+                                    <img class="modal-thumb" src="assets/img/sanandresWeb.jpg" alt="san andres Post">
+                                </div>
+                                <div class="content">
+                                    <h4 class="title"><a href="single-portfolio.html">San Andres</a></h4>
+                                    <span class="subtitle">Html / css / Jquery / Javascript </span>
+                                    <div class="details-description">
+                                        <p><a target="_blank" href="https://www1.sanandres.esc.edu.ar/">Visit site</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 project web">
+                            <div class="project-grid">
+                                <div class="thumbnail">
+                                    <a href="#">
+                                        <img src="assets/img/tuguruDesk.jpg" alt="conectalia on screen">
+                                    </a>
+                                    <img class="modal-thumb" src="assets/img/tuguruWeb.jpg" alt="Blog Post">
+                                </div>
+                                <div class="content">
+                                    <h4 class="title"><a href="#">Tu Guru</a></h4>
+                                    <span class="subtitle">Html / Css / Jquery / Javascript / JSX / Bootstrap </span>
+                                    <div class="details-description">
+                                        <p><a target="_blank" href="https://miportal.gurusoluciones.com.ar/">Visit site</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section class="section-padding bg-color-dark" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6" data-sal="slide-up" data-sal-duration="1000">
+                        <div class="contact-address mb--30">
+                            <div class="section-heading heading-light-left">
+                                <span class="subtitle">Need a Web Designer?</span>
+                                <h2 class="title">Let’s work together</h2>
+                            </div>
+                            <div class="address-list">
+                                <div class="address">
+                                    <h6 class="title">Mail</h6>
+                                    <p><a href="mailto:sebaspado@gmail.com">sebaspado@gmail.com</a></p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" data-sal="slide-up" data-sal-duration="1000" data-sal-delay="200">
+                        <div class="contact-form-box mb--30">
+                            <h3 class="title">Don´t wanna mail me?<br> Send me your message</h3>
+                            <form method="POST" action="mail.php" class="axil-contact-form">
+                                <div class="form-group">
+                                    <label>Name</label>
+                                    <input type="text" class="form-control" name="contact-name" placeholder="John Smith">
+                                </div>
+                                <div class="form-group">
+                                    <label>Email</label>
+                                    <input type="email" class="form-control" name="contact-email" placeholder="example@mail.com">
+                                </div>
+                                <div class="form-group mb--40">
+                                    <label>Message</label>
+                                    <textarea name="contact-message" id="message" class="form-control textarea" cols="30" rows="6"></textarea>
+                                </div>
+                                <div class="form-group text-end">
+                                    <button type="submit" class="axil-btn btn-fill-primary w-auto btn-primary" name="submit-btn">SEND</button>
+                                </div>
+                                <input type="hidden" class="form-control" name="contact-company" value="Null">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- footer a futuro
+        <footer class="footer-area">
+            <div class="container">
+
+
+            </div>
+        </footer>-->
+
+    </div>
+
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/jquery-appear.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/sal.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/js.cookie.js"></script>
+    <script src="assets/js/jquery.style.switcher.js"></script>
+    <script src="assets/js/tilt.js"></script>
+    <script src="assets/js/jquery.nav.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
