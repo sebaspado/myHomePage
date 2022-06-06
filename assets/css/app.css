@@ -2487,6 +2487,10 @@ input {
 }
 
 @media only screen and (max-width: 991px) {
+    .onlyMobile {
+        display: block !important;
+        margin-bottom: 3em
+    }
     .banner {
         margin-top: -115px;
         padding: 160px 0 0;
