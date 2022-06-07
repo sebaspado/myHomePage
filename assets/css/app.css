@@ -7488,11 +7488,28 @@ pre.line-numbers>code {
     }
 }
 
+.with-errors li {
+    color: #dc4a64;
+    text-align: right;
+    font-size: 14px;
+    margin-top: 5px
+}
+
+#msgSubmit {
+    font-size: 22px;
+    margin: 20px 0;
+}
+
 .animated {
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
+}
+
+.animated.infinite {
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
 }
 
 @-webkit-keyframes shake {
@@ -7544,27 +7561,4 @@ pre.line-numbers>code {
 .shake {
     -webkit-animation-name: shake;
     animation-name: shake;
-}
-
-@-webkit-keyframes swing {
-    20% {
-        -webkit-transform: rotate3d(0, 0, 1, 15deg);
-        transform: rotate3d(0, 0, 1, 15deg);
-    }
-    40% {
-        -webkit-transform: rotate3d(0, 0, 1, -10deg);
-        transform: rotate3d(0, 0, 1, -10deg);
-    }
-    60% {
-        -webkit-transform: rotate3d(0, 0, 1, 5deg);
-        transform: rotate3d(0, 0, 1, 5deg);
-    }
-    80% {
-        -webkit-transform: rotate3d(0, 0, 1, -5deg);
-        transform: rotate3d(0, 0, 1, -5deg);
-    }
-    100% {
-        -webkit-transform: rotate3d(0, 0, 1, 0deg);
-        transform: rotate3d(0, 0, 1, 0deg);
-    }
 }
