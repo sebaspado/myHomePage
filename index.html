@@ -457,7 +457,50 @@
                             </div>
                         </div>
 
+                        <div class="col-md-6 project design">
+                            <div class="project-grid">
+                                <div class="thumbnail">
+                                    <a href="#">
+                                        <img src="assets/img/resantaCd.jpg" alt="resanta on screen">
+                                    </a>
+                                    <img class="modal-thumb" src="assets/img/resantaBig.jpg" alt="Resanta Post">
+                                </div>
+                                <div class="content">
+                                    <h4 class="title"><a href="#">Resanta rock band</a></h4>
+                                    <span class="subtitle">Album covert art design - Photoshop </span>
+                                </div>
+                            </div>
+                        </div>
 
+                        <div class="col-md-6 project design">
+                            <div class="project-grid">
+                                <div class="thumbnail">
+                                    <a href="#">
+                                        <img src="assets/img/planeta1.jpg" alt="planet on screen">
+                                    </a>
+                                    <img class="modal-thumb" src="assets/img/planet2.jpg" alt="planet big">
+                                </div>
+                                <div class="content">
+                                    <h4 class="title"><a href="#">Knowing Gamma</a></h4>
+                                    <span class="subtitle">Sci-fi Poster - Photoshop </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 project design">
+                            <div class="project-grid">
+                                <div class="thumbnail">
+                                    <a href="#">
+                                        <img src="assets/img/sunshine1.jpg" alt="sunshine on screen">
+                                    </a>
+                                    <img class="modal-thumb" src="assets/img/sunshine2.jpg" alt="sunshine big">
+                                </div>
+                                <div class="content">
+                                    <h4 class="title"><a href="#">The sunshine</a></h4>
+                                    <span class="subtitle">Sci-fi Poster - Photoshop </span>
+                                </div>
+                            </div>
+                        </div>
 
                     </div>
                 </div>
@@ -488,25 +531,30 @@
                     <div class="col-lg-6" data-sal="slide-up" data-sal-duration="1000" data-sal-delay="200">
                         <div class="contact-form-box mb--30">
                             <h3 class="title">Don´t wanna mail me?<br> Send me your message</h3>
-                            <!-- <form method="POST" action="mail.php" class="axil-contact-form">
-                                <div class="form-group">
-                                    <label>Name</label>
-                                    <input type="text" class="form-control" name="contact-name" placeholder="John Smith">
+
+                            <form role="form" id="contactForm" data-toggle="validator" class="shake">
+                                <div class="row">
+                                    <div class="form-group col-sm-6">
+                                        <label for="name" class="h4">Name</label>
+                                        <input type="text" class="form-control" id="name" placeholder="Enter name" required data-error="NEW ERROR MESSAGE">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="form-group col-sm-6">
+                                        <label for="email" class="h4">Email</label>
+                                        <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
                                 </div>
                                 <div class="form-group">
-                                    <label>Email</label>
-                                    <input type="email" class="form-control" name="contact-email" placeholder="example@mail.com">
+                                    <label for="message" class="h4 ">Message</label>
+                                    <textarea id="message" class="form-control" rows="5" placeholder="Enter your message" required></textarea>
+                                    <div class="help-block with-errors"></div>
                                 </div>
-                                <div class="form-group mb--40">
-                                    <label>Message</label>
-                                    <textarea name="contact-message" id="message" class="form-control textarea" cols="30" rows="6"></textarea>
-                                </div>
-                                <div class="form-group text-end">
-                                    <button type="submit" class="axil-btn btn-fill-primary w-auto btn-primary" name="submit-btn">SEND</button>
-                                </div>
-                                <input type="hidden" class="form-control" name="contact-company" value="Null">
-                            </form>-->
-                            <h3>Under construction!</h3>
+                                <button type="submit" id="form-submit" class="btn btn-success btn-lg pull-right ">Submit</button>
+                                <div id="msgSubmit" class="h3 text-center hidden"></div>
+                                <div class="clearfix"></div>
+                            </form>
+
                         </div>
                     </div>
                 </div>
@@ -538,6 +586,8 @@
     <script src="assets/js/tilt.js"></script>
     <script src="assets/js/jquery.nav.js"></script>
     <script src="assets/js/app.js"></script>
+    <script src="assets/js/validator.min.js"></script>
+    <script src="assets/js/submitForm.js"></script>
 </body>
 
 </html>

@@ -1,84 +1,53 @@
-function submitForm(form, msg_subject) {
-    var name = $(form).find(".name").val();
-    var email = $(form).find(".email").val();
-    var message = $(form).find(".message").val();
+$("#contactForm").validator().on("submit", function(event) {
+    if (event.isDefaultPrevented()) {
+        // handle the invalid form...
+        formError();
+        submitMSG(false, "Did you fill in the form properly?");
+    } else {
+        // everything looks good!
+        event.preventDefault();
+        submitForm();
+    }
+});
+
+
+function submitForm() {
+    // Initiate Variables With Form Content
+    var name = $("#name").val();
+    var email = $("#email").val();
+    var message = $("#message").val();
 
     $.ajax({
         type: "POST",
-        url: "assets/php/form-processGeneral.php",
-        data: "name=" +
-            name +
-            "&email=" +
-            email +
-            "&ciudad=" +
-            ciudad +
-            "&direccion=" +
-            direccion +
-            "&telefono=" +
-            telefono +
-            "&nit=" +
-            nit +
-            "&nombreChico=" +
-            nombreChico +
-            "&msg_subject=" +
-            msg_subject +
-            "&message=" +
-            message,
+        url: "php/form-processGeneral.php",
+        data: "name=" + name + "&email=" + email + "&message=" + message,
         success: function(text) {
             if (text == "success") {
-                formSuccess(form);
+                formSuccess();
             } else {
-                formError(form);
-                submitMSG(form, false, text);
+                formError();
+                submitMSG(false, text);
             }
-        },
+        }
     });
 }
 
-function formSuccess(form) {
-    //   $("#contactFormBoom")[0].reset();
-    $("#overlay").fadeOut(300);
-    submitMSG(form, true, "¡Su pedido se ha enviado con exito!");
+function formSuccess() {
+    $("#contactForm")[0].reset();
+    submitMSG(true, "Message Submitted!")
 }
 
-function formError(form) {
-    $(form)
-        .removeClass()
-        .addClass("shake animated")
-        .one(
-            "webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend",
-            function() {
-                $(this).removeClass();
-            }
-        );
+function formError() {
+    $("#contactForm").removeClass().addClass('shake animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+        $(this).removeClass();
+    });
 }
 
-function submitMSG(form, valid, msg) {
+function submitMSG(valid, msg) {
     if (valid) {
         var msgClasses = "h3 text-center tada animated text-success";
     } else {
         var msgClasses = "h3 text-center text-danger";
     }
-    $(form).removeClass().addClass(msgClasses).text(msg);
+    $("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
 }
-
-
-
-jQuery(function($) {
-    $(document).ajaxSend(function() {
-        $("#overlay").fadeIn(300);　
-    });
-
-    $('submit').click(function() {
-        $.ajax({
-            type: 'POST',
-            success: function(data) {
-                console.log(data);
-            }
-        }).done(function() {
-            setTimeout(function() {
-                $("#overlay").fadeOut(300);
-            }, 500);
-        });
-    });
-});
